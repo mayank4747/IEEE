@@ -1,0 +1,35 @@
+.thumbnail img{
+	width :100%;
+}
+
+.thumbnail{
+	padding : 0;
+}
+.img-responsive{
+	width:100%;
+}
+
+.thumbnail .caption-full{
+	padding:9px;
+}
+.deleteform{
+	display:inline;
+}
+.caption{
+	text-align:center;
+	font-weight:100;
+}
+#campname{
+	margin:auto;
+}
+.fix-rounded-right {
+  border-top-right-radius: .2rem !important;
+  border-bottom-right-radius: .2rem !important;
+}
+body{
+ background: #4b6cb7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4b6cb7, #182848); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4b6cb7, #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *
+
+}
+

@@ -1,0 +1,81 @@
+body {
+  background-color: #000;
+}
+
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+#landing-header h1 {
+  color: #faca39;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+.slideshow li:nth-child(1) { 
+  background-image: url(https://scontent.fbho4-2.fna.fbcdn.net/v/t1.0-9/72166793_2727642943926218_6704695552535166976_n.jpg?_nc_cat=109&_nc_sid=dd9801&_nc_ohc=GubXZV2-MucAX8eSdCU&_nc_ht=scontent.fbho4-2.fna&oh=0aae39c7ce323702310fd13fd8b6e3e8&oe=5F7C5F38) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://scontent.fbho4-1.fna.fbcdn.net/v/t31.0-0/p640x640/17191934_1465484916808700_5019903622428502504_o.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_ohc=F9kZ8xjfSCIAX9c3tGG&_nc_ht=scontent.fbho4-1.fna&tp=6&oh=07956debd7c284a930cfd32ee6b2eb4b&oe=5F7AD8CB);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://scontent.fbho4-1.fna.fbcdn.net/v/t1.0-0/p640x640/43239373_2123222281034957_3945913388298665984_o.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_ohc=MN7YMfx17I0AX9yaacu&_nc_ht=scontent.fbho4-1.fna&tp=6&oh=8e3d1982d5348a8b9d67dd7a03847dd5&oe=5F7AC8D7);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://scontent.fbho4-2.fna.fbcdn.net/v/t31.0-0/p640x640/17212069_1466803046676887_2661643008399782719_o.jpg?_nc_cat=101&_nc_sid=e007fa&_nc_ohc=7ZZ9n_cP6sIAX_bLnHu&_nc_ht=scontent.fbho4-2.fna&tp=6&oh=c38393b1c452b0922e5fd984535c586d&oe=5F79768D);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://scontent.fbho4-1.fna.fbcdn.net/v/t1.0-9/71242307_2714558231901356_4974234605998571520_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=W-xtvWHMEKoAX-PGdrj&_nc_ht=scontent.fbho4-1.fna&oh=9e1a3c577196755be7dcb8ec1a0e36f6&oe=5F7A4F76);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
